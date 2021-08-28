@@ -1,16 +1,11 @@
-import Topbar from "./components/topbar/Topbar"
-import Sidebar from "./components/sidebar/Sidebar"
-import "./app.css"
+// import { BrowserRouter as Router} from 'react-router-dom'
+// import Routes from './routes/index';
+// import "./app.css"
+import Admin from "./pages/Admin"
 
 function App() {
   return (
-    <div className="App">
-      <Topbar />
-      <div className="container">
-        <Sidebar />
-        <div className="others"></div>
-      </div>
-    </div>
+    <Admin />
   );
 }
 
