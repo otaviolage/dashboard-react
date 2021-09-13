@@ -3,7 +3,7 @@ import "./topbar.css"
 import { ShoppingCart, Storefront, DashboardOutlined } from '@material-ui/icons'
 import pedraazul from "../../pedraazul.png"
 
-export default function Topbar () {
+export default function Header () {
     return (
         <div className="topbar">
             <div className="topbarWrapper">
@@ -27,6 +27,5 @@ export default function Topbar () {
                 </div>
             </div>
         </div>
-
     )
 }
