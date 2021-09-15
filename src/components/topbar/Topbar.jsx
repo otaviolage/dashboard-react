@@ -1,7 +1,9 @@
 import React from 'react'
 import "./topbar.css"
 import { ShoppingCart, Storefront, DashboardOutlined } from '@material-ui/icons'
-import pedraazul from "../../pedraazul.png"
+import pedraazul from "../../images/pedraazul.png"
+import { Link } from 'react-router-dom';
+
 
 export default function Header () {
     return (
@@ -13,16 +15,16 @@ export default function Header () {
                     <span className="subLogo">admin</span>
                 </div>
                 <div className="topRight">
-                    <div className="topbarIconContainer">
-                        <Storefront />
-                    </div>
-                    <div className="topbarIconContainer">
+                    <Link to="./showcase" className="topbarIconContainer">
+                        <Storefront  />
+                    </Link>
+                    <Link to="./cart" className="topbarIconContainer">
                         <ShoppingCart />
                         <span className="topbarIconBage">2</span>
-                    </div>
-                    <div className="topbarIconContainer">
+                    </Link>
+                    <Link to="./" className="topbarIconContainer">
                         <DashboardOutlined />
-                    </div>
+                    </Link>
                     <img src="https://avatars.githubusercontent.com/u/63686965?s=400&u=d10ba5394d8ec6f1478d50e404979ada77ff904a&v=4" alt="" className="topAvatar" />
                 </div>
             </div>

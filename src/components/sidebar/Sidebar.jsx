@@ -8,7 +8,6 @@ export default function Sidebar() {
             <div className="sidebarWrapper">
                 <Dashboard />
                 <Quickmenu />
-                
             </div> 
         </div>
     )
