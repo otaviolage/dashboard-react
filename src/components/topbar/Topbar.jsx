@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { setState, useState } from 'react'
 import "./topbar.css"
 import { ShoppingCart, Storefront, DashboardOutlined } from '@material-ui/icons'
 import pedraazul from "../../images/pedraazul.png"
 import { Link } from 'react-router-dom';
 
 
-export default function Header () {
+const Topbar = (props) => {
+
+    // const [ cartQuantity , addToCart ] = useState()
+
     return (
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
                     <img src={pedraazul} alt="logo pedra azul" className="pedraazul" />
                     <span className="logo">SOLID</span>
-                    <span className="subLogo">admin</span>
+                    <span className="subLogo">{props.subtitle}</span>
                 </div>
                 <div className="topRight">
                     <Link to="./showcase" className="topbarIconContainer">
@@ -20,7 +23,7 @@ export default function Header () {
                     </Link>
                     <Link to="./cart" className="topbarIconContainer">
                         <ShoppingCart />
-                        <span className="topbarIconBage">2</span>
+                        <span className="topbarIconBage">{props.cartQuantity}</span>
                     </Link>
                     <Link to="./" className="topbarIconContainer">
                         <DashboardOutlined />
@@ -31,3 +34,5 @@ export default function Header () {
         </div>
     )
 }
+
+export default Topbar;

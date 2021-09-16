@@ -5,3 +5,18 @@
 .others {
     flex: 4;
 }
+
+.Showcase {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Showcase .body-home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+}

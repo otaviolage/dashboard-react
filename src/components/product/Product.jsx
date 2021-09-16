@@ -1,52 +1,46 @@
 import "./product.css";
-import coracao from "../../images/heart-gray.png";
-import coracaoPink from "../../images/heart-pink.png";
-import {useCart} from '../../hooks/Cart';
-import { useEffect, useState, useMemo } from "react";
-// import formatPrice from "../../utils/formatPrice";
+import { useMemo } from "react";
 
-
-const Product = ({prod})=>{
-    const {addToCart, cart, deleteToCart} = useCart();
-    const parcela = prod.availability.price/8;
-
-    const [isInCart,setIsInCart] = useState(false);
-    // useEffect(()=>{
-   
-    //     const isInCartFilter = cart.filter((cartItem)=>{
-    //         return cartItem.sku === prod.sku;
-    //     })
-    //     setIsInCart(!!isInCartFilter.length);
-    // },[cart,prod])
+const Product = (props) => {   
 
     const parsedTotal = useMemo(()=>{
-        return  prod.availability.price;
-    },[prod.availability.price])
+        return  props.prod.availability.price;
+    },[props.prod.availability.price])
+
+    const parcel = (price) => {
+        return price / 8
+    }
+
+    const handleCart = () => {
+        props.setCartQuantity(props.cartQuantity + 1)
+        console.log('sanmidpasmdoaspdm,aspQTD', props.cartQuantity)
+
+        console.log(props.prod)
+        props.addToCart(props.cart, props.prod)
+        console.log(props.cart)
+    }
 
     return (
         <div className='product'>
-            <div className="img-like">
-                <img src={coracao} alt="like"/>
-                <img src={coracaoPink} alt="like"/>
-            </div>
+            
             <div className="box-product">
                 <div className="img-product">
-                    <img src={prod.imageUrl} alt="like"/>
+                    <img src={props.prod.imageUrl}/>
                 </div>
                 <div className="name-product">
-                    <p>{prod.name}</p>
+                    <p>{props.prod.name}</p>
                 </div>
                 <div className="preco-product">
-                    <h4>{parsedTotal}</h4>
-                    <p>8x de R$ {parcela} sem juros</p>
+                    <h4>R$ {parsedTotal},00</h4>
+                    <p>8x de R$ {parcel(parsedTotal)} sem juros</p>
                 </div>
                 <div className="comprar">
-                   
-                   {
-                    isInCart
-                    ?<button onClick={()=>{deleteToCart(prod.sku)}} className="remover">Remover da Sacola</button>
-                    :<button onClick={()=>{addToCart(prod)}} className="adicionar">Adicionar à sacola</button>
-                   }
+                    <button 
+                        onClick={
+                            () => handleCart()
+                        } 
+                        className="adicionar">Adicionar à sacola
+                    </button>
                 </div>
             </div>
         </div>

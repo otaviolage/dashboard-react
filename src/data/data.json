@@ -6,11 +6,11 @@
        {
           "sku":"d9059f0f492f4d71a2b4",
           "originalId":"2305061-00",
-          "name":"SALMOS -CAPA MARROM 978857860414",
+          "name":"SALMOS -CAPA MARROM",
           "imageUrl":"https://a-static.mlcdn.com.br/250x250/title-reference/magazineluiza/230506100/fd43fcf0212810e9763d2c97c43d6315.jpg",
           "hasPriceUpdated":false,
           "availability":{
-             "price":150
+             "price":35
           },
           "subcategory":{
              "id":62,
@@ -37,7 +37,7 @@
        {
           "sku":"dbd6272add8d42199134",
           "originalId":"2305060-00",
-          "name":"ORACAO DA NOITE 978655689198",
+          "name":"ORACAO DA NOITE",
           "imageUrl":"https://a-static.mlcdn.com.br/250x250/title-reference/magazineluiza/230506000/343f7614e7a954123abfe42f1842574f.jpg",
           "hasPriceUpdated":false,
           "availability":{
@@ -68,7 +68,7 @@
        {
           "sku":"8608e689982e49d58a8e",
           "originalId":"2305067-00",
-          "name":"UMA CANCAO 978859508647",
+          "name":"UMA CANCAO",
           "imageUrl":"https://a-static.mlcdn.com.br/250x250/title-reference/magazineluiza/230506700/9c53a7b93d3a996c6564b61dc5e2fc8a.jpg",
           "hasPriceUpdated":false,
           "availability":{
@@ -99,7 +99,7 @@
        {
           "sku":"e73944e3ea20421c980a",
           "originalId":"2306004-00",
-          "name":"O PROBLEMA DA DOR 978655689220",
+          "name":"O PROBLEMA DA DOR",
           "imageUrl":"https://a-static.mlcdn.com.br/250x250/title-reference/magazineluiza/230600400/fd47754a2aa3c12a7ddfa1a641f44f4d.jpg",
           "hasPriceUpdated":false,
           "availability":{

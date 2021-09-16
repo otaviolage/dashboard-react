@@ -10,9 +10,36 @@
     margin-right: 20px;
 }
 
-.product:hover{
-    box-shadow: 0px 0px 21px -5px grey;
-    transition: 500ms;
+.product .box-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 320px;
+}
+
+.product .img-product img{
+    width: 80px;
+}
+
+.product .adicionar{
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #339DB1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product .adicionar:hover{
+    background-color: #1E33FB;
+    
 }
 
 .product .name-product {
@@ -22,16 +49,7 @@
     justify-content: center;
 }
 
-.product .name-product p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #404040;
-    width: 85%;
-    font-weight: inherit;
-}
-
-.product .preco-product{
+/* .product .preco-product{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -53,19 +71,6 @@
     font-size: 26px;
     color: #0a6fc7;
 }
-
-
-.product .box-product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 320px;
-}
-.product .img-product img{
-    width: 80px;
-}
-
 
 .product .img-product{
     width: 100%;
@@ -144,4 +149,4 @@
     font-weight: bold;
     text-decoration: none;
 }
-
+ */
