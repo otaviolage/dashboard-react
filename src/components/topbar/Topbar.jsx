@@ -1,4 +1,4 @@
-import React, { setState, useState } from 'react'
+import React from 'react'
 import "./topbar.css"
 import { ShoppingCart, Storefront, DashboardOutlined } from '@material-ui/icons'
 import pedraazul from "../../images/pedraazul.png"
