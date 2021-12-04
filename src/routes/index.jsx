@@ -1,20 +1,18 @@
 import {Switch, Route} from 'react-router-dom';
 
-import Admin from '../pages/admin/Admin'
-import Cart from '../pages/cart/Cart'
-import Showcase from '../pages/showcase/Showcase'
-import { Fragment, useState } from 'react';
+import Home from '../pages/Home'
+import Cart from '../pages/Cart'
+import Admin from '../pages/Admin'
 
 
 const Routes = ()=>{
+
     return (
-    <Fragment>
-        <Switch>
-            <Route path="/" component={Admin} exact/>
-            <Route path="/cart" component={Cart}/>
-            <Route path="/showcase" component={Showcase}/>
-        </Switch>
-    </Fragment>
+    <Switch>
+        <Route path="/" component={Home} exact/>
+        <Route path="/cart" component={Cart}/>
+        <Route path="/admin" component={Admin}/>
+    </Switch>
     );
 }
 
