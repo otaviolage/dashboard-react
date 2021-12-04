@@ -1,19 +1,11 @@
-.container {
-    display: flex
-}
-
-.others {
-    flex: 4;
-}
-
-.Showcase {
+.home{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
 
-.Showcase .body-home{
+.home .body-home{
     display: flex;
     align-items: center;
     flex-wrap: wrap;

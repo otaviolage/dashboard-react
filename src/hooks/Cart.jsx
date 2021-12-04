@@ -1,47 +1,59 @@
-
 import { createContext, useCallback, useContext, useState } from 'react';
 
-export const CartContext = createContext({})
 
-export const CartProvider = 
-    ({ children }) => {
-    const [ cart, setCart ] = useState(() => {
-        const cart = localStorage.getItem('@solid:cart')
-        if (cart) return JSON.parse(cart)
-        return []
+export const CartContext = createContext(
+  {}
+);
+
+export const CartProvider = ({ children }) => {
+    const [cart, setCart] = useState(()=>{
+        const cart = localStorage.getItem('@solidboard:cart');
+        if(cart){
+            return JSON.parse(cart);
+        }  
+        return [];
     })
 
-    const addToCart = useCallback (
-        (product) => {
-            product.quantity = product.quantity++
-            const newCart = cart.push(product)
-            setCart(newCart)
-            localStorage.setItem('@solid:cart', JSON.stringify(newCart))
-        },
-        [cart]
-    )
+    const addToCart = useCallback((product)=>{
+        product.quantity = product.quantity++;
+        const newCart = [...cart, product];
+        setCart(newCart);
+        localStorage.setItem('@solidboard:cart', JSON.stringify(newCart));
+    },[cart]);
 
-    const deleteToCart = useCallback ( 
-        (sku) => {
-            const newCart = cart.filter(item => item.sku !== sku)
-            setCart([...newCart])
-            localStorage.setItem('@solid:cart', JSON.stringify(newCart))
-        },
-        [cart]
-    )
+    const deleteToCart = useCallback((sku)=>{
+        const newCart = cart.filter(item=> item.sku !== sku);
+        setCart([...newCart])
+        localStorage.setItem('@solidboard:cart', JSON.stringify(newCart));
+    },[cart]);
 
-    return (
-        <CartContext.Provider
-          value={{ cart, addToCart, deleteToCart }}
-        >
-          {children}
-        </CartContext.Provider>
-      )
-}
+    const updateCart = useCallback((sku, quantity)=>{
+        const productCartIndex = cart.findIndex(item=> item.sku === sku);
+        const newCart = cart;
+        const itemToUpgrade = cart[productCartIndex];
+
+        itemToUpgrade.quantity = Number(quantity);
+        newCart[productCartIndex] = itemToUpgrade;
+
+        setCart([...newCart]);
+        localStorage.setItem('@solidboard:cart', JSON.stringify(cart));
+    },[cart]);
+
+  return (
+    <CartContext.Provider
+      value={{ cart, addToCart, deleteToCart, updateCart }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
 export function useCart(){
-    const context = useContext(CartContext);
-  
-    if (!context) throw new Error('useCart must be used within an CartProvider');
-    return context;
+  const context = useContext(CartContext);
+
+  if (!context) {
+    throw new Error('useCart must be used within an CartProvider');
   }
+
+  return context;
+}

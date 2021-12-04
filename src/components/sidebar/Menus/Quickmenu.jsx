@@ -20,6 +20,6 @@ export default function Quickmenu() {
                     Vendas
                 </li>
             </ul>
-        </div>   
+        </div>
     )
 }
