@@ -1,11 +1,11 @@
 # Solid Board
 Este projeto foi realizado 
 
-## :metal: Integrantes
-Eduardo Addad
-Gabriel Oliveira
-Matheus Oliveira
-Otávio Lage dos Santos
+## :metal: Time
+- Eduardo Addad
+- Gabriel Oliveira
+- Matheus Oliveira
+- Otávio Lage dos Santos
 
 ## Planejamento
 
