@@ -1,7 +1,7 @@
 # Solid Board
 Este projeto foi realizado 
 
-## Integrantes
+## :metal: Integrantes
 Eduardo Addad
 Gabriel Oliveira
 Matheus Oliveira
