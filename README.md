@@ -1,6 +1,13 @@
-# Esse projeto foi criado com o template do Create React App
+# Solid Board
+Este projeto foi realizado 
 
-## Como iniciar o projeto:
+## Integrantes
+Eduardo Addad
+Gabriel Oliveira
+Matheus Oliveira
+Otávio Lage dos Santos
+
+## Planejamento
 
 ![image](https://user-images.githubusercontent.com/63686965/144714848-2b677af1-9a45-41b3-a210-8ec073ab8d59.png)
 
