@@ -2,6 +2,9 @@
 
 ## Como iniciar o projeto:
 
+![image](https://user-images.githubusercontent.com/63686965/144714848-2b677af1-9a45-41b3-a210-8ec073ab8d59.png)
+
+
 Acesse a pasta do projeto e abra o terminal, digite um dos comandos a seguir:
 ### `yarn install` ou `npm install`
 
