@@ -2,13 +2,10 @@ import React from 'react'
 import "./style.css"
 import { ShoppingCart, Storefront, DashboardOutlined } from '@material-ui/icons'
 import { Link } from 'react-router-dom';
-import { useState } from "react";
-
+import pedraazul from '../../images/pedraazul.png'
 
 export default function Header () {
     var cart = JSON.parse(localStorage.getItem('@solidboard:cart'))
-
-    // const [length, setLength] = useState(0)
 
     const setLength = () => {
         var length = 0
@@ -16,15 +13,11 @@ export default function Header () {
         return length
     }
 
-    // for(var k in cart) if(cart.hasOwnProperty(k)) setLength(length++)
-    // console.log(length)
-
-    // // setLength(length)
     return (
         <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    {/* <img src={pedraazul} alt="logo pedra azul" className="pedraazul" /> */}
+                    <img src={pedraazul} alt="logo pedra azul" className="pedraazul" />
                     <span className="logo">SOLID</span>
                     <span className="subLogo">compras</span>
                 </div>

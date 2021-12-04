@@ -21,9 +21,7 @@ const Cart = () => {
                         }) 
                         :<div>Sacola Vazia :(</div>
                     }
-
                 </div>
-
                 <TotalCart />
             </div>
         </div>

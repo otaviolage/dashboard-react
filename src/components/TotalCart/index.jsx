@@ -11,13 +11,17 @@ const TotalCart = ()=>{
     const [quantity, setQuantity] = useState(0);
     useEffect(()=>{
         const newTotal = cart.reduce((antigo, item)=>{
-            const qtd = item.quantity;
+            const qtd = item.quantity || 1;
             const preco = item.availability.price;
 
+            console.log(antigo)
+            console.log('qtd', qtd)
+            console.log(preco)
+        
             return qtd * preco + antigo;
         },0)
         const newQuantity = cart.reduce((antigo,item)=>{
-            const qtd = item.quantity;
+            const qtd = item.quantity || 1;
 
             return qtd + antigo;
         },0)
@@ -26,7 +30,7 @@ const TotalCart = ()=>{
     },[cart])
 
     const parsedTotal = useMemo(()=>{
-        return  formatPrice(total);
+        return formatPrice(total);
     },[total])
 
     return (
@@ -38,7 +42,7 @@ const TotalCart = ()=>{
                         <p>{parsedTotal} </p>
                     </div>
                 </div>
-                <Link className="continue" to="./cart">Continuar</Link>
+                <Link className="continue" to="./purchased">Concluir a Compra</Link>
             </div>
         </div>
     )
