@@ -8,7 +8,7 @@
 </p>
 
 # Solid Board
-Este projeto foi realizado por alunos da Facens com o intuito de integrar o conhecimento aprendido ao longo do quarto semestre do curso de Análise e Desenvolvimento de Sistemas e como entrega final da matéria de Fábrica de Projetos, ministrada pelo professor Marcio Funes.
+Este projeto foi realizado por alunos da Facens com o intuito de integrar o conhecimento aprendido ao longo do quarto semestre do curso de Análise e Desenvolvimento de Sistemas e como entrega final da matéria "Fábrica de Projetos IV", ministrada pelo professor Marcio Funes.
 ![image](https://user-images.githubusercontent.com/63686965/144715154-dc7458f1-10b9-4627-ab07-98881eb73b68.png)
 
 ## :metal: Time
