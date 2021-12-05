@@ -35,8 +35,6 @@ Trabalhamos com a metodologia Kanban, utilizando o Trello, dividindo as tarefas 
 - React
 - PowerBI
 
-
-
 ## 🔨 Como rodar o projeto
 
 O Projeto utiliza o padrão do React para funcionamento. Seguem passos a serem seguidos:
@@ -50,4 +48,7 @@ Logo após instalar o node, digite um dos comandos abaixo:
 O app irá rodar no localhost.\
 Abra [http://localhost:3000](http://localhost:3000) para ver o projeto rodando no seu navegador.
 
-
+## 🏁 O PROJETO
+<img width="958,3" height="592" src="https://user-images.githubusercontent.com/63686965/144731108-e8ac3cc8-75a2-4a41-95bf-336e283063a2.png">
+<img width="958,3" height="592" src="https://user-images.githubusercontent.com/63686965/144731179-51a0240b-ca12-4070-9056-7a391b6a09e8.png">
+<img width="958,3" height="500" src="https://user-images.githubusercontent.com/63686965/144731216-5a3dec76-7de1-47da-bf7d-bf801b64bae3.png">
