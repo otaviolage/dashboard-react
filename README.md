@@ -30,7 +30,8 @@ Trabalhamos com a metodologia Kanban, utilizando o Trello, dividindo as tarefas 
 - React
 - PowerBI
 
-<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144729827-e8544899-0d74-4147-b10f-3cce7197f4b1.png">
+
 
 ## 🔨 Como rodar o projeto
 
