@@ -1,5 +1,10 @@
 <p align="center">
   <img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144715482-8bf48753-dc73-4256-8888-e4d426c61306.png">
+  <img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144730263-ce286101-ff8b-43ae-8ae4-9e34ffca342a.png">
+  <img width="240" height="80" src="https://user-images.githubusercontent.com/63686965/144730198-5beca268-1bd0-4bf9-9181-a0016ea3d794.png">
+  <img width="95" height="80" src="https://user-images.githubusercontent.com/63686965/144730300-2487e01a-ae72-4e76-9597-feaf12140e27.png">
+  <img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144729989-e3c262e4-7f93-425a-a734-2e799f3509bc.png">
+  <img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144715482-8bf48753-dc73-4256-8888-e4d426c61306.png">
 </p>
 
 # Solid Board
@@ -30,7 +35,6 @@ Trabalhamos com a metodologia Kanban, utilizando o Trello, dividindo as tarefas 
 - React
 - PowerBI
 
-<img width="80" height="80" src="https://user-images.githubusercontent.com/63686965/144729827-e8544899-0d74-4147-b10f-3cce7197f4b1.png">
 
 
 ## 🔨 Como rodar o projeto
