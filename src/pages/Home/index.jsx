@@ -17,7 +17,6 @@ const Home = ()=>{
     return(
         <div className="home">
             <Header page='home'/>
-            {/* <ConectSe/> */}
             <div className="body-home">
                 {data.products.map((produto,i) => {
 
