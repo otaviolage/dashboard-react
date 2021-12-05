@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import Product from '../../components/Product'; 
 import {useCart} from '../../hooks/Cart';
 import Header from '../../components/Header';
-import ConectSe from '../../components/ConectSe';
 import data from '../../data/data.json';
 import './style.css';
 
@@ -17,7 +16,7 @@ const Home = ()=>{
     },[cart]);
     return(
         <div className="home">
-            <Header  />
+            <Header page='home'/>
             {/* <ConectSe/> */}
             <div className="body-home">
                 {data.products.map((produto,i) => {

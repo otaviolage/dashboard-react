@@ -8,6 +8,7 @@
     z-index: 999;
 }
 
+
 .topbarWrapper {
     height: 100%;
     display: flex;
@@ -16,12 +17,20 @@
     color: #FCF7FF
 }
 
+.selected {
+    color: #1E33FB;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
 .topLeft {
     display: flex;
     align-items: center;
     color: #1E33FB;
     padding-left: 1%;
-
 }
 
 .topRight {
@@ -29,12 +38,22 @@
     align-items: center;
 }
 
+.logo-image{
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
 .logo {
     font-weight: bold;
     font-size: 60px;
     color: white;
     cursor: pointer;
-    margin-top: 5px;
+    margin: 5px 5px 0 0;
+    text-decoration: none;
 }
 
 .subLogo {
@@ -51,10 +70,11 @@
     align-items: center;
     margin: 5px 5px;
     cursor: pointer;
+    color: white
 }
 
 .topbarIconContainer:hover, .logo:hover, .subLogo:hover{
-    color: #0074BA
+    color: #6e96af
 }
 
 .topbarIconBage {
@@ -73,9 +93,9 @@
 }
 
 .pedraazul {
-    width: 40px;
-    height: 40px;
-    margin: 25px 5px 20px 0px;
+    width: 60px;
+    height: 60px;
+    margin: 25px 0px 20px 0px;
     cursor: pointer;
 }
 
